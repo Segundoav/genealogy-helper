@@ -12,6 +12,9 @@ Local web application developed in vanilla JavaScript designed to act as a strat
 - HTML5 / CSS3
 - JavaScript (ES6+)
 
+## Video Demonstration
+- [Watch the W01 Video Demonstration on YouTube](https://youtu.be/_eBUE-n2CJo)
+
 ## Author
 - **Segundo Alvarez**
 - Software Development Student at BYU-Pathway / BYU-Idaho.

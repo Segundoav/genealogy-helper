@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 .container {
+    max-width: 600px;
+    margin: 0 auto;
     background: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -20,7 +19,15 @@ body {
 h1 {
     color: #004A8D;
     font-size: 1.5rem;
+}
+
+.form-group {
     margin-bottom: 15px;
+}
+
+input, select {
+    padding: 8px;
+    margin-left: 5px;
 }
 
 button {
@@ -31,9 +38,39 @@ button {
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 15px;
 }
 
 button:hover {
     background-color: #003366;
+}
+
+.results-section {
+    margin-top: 30px;
+    border-top: 2px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.strategy-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #004A8D;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.strategy-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.strategy-card p {
+    margin: 8px 0;
+    line-height: 1.4;
+    color: #555;
+}
+
+.strategy-card small {
+    display: block;
+    color: #888;
 }

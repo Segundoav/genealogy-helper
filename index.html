@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genealogy Brick Wall Helper - Hello World</title>
+    <title>Genealogy Brick Wall Helper</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="container">
         <h1>Genealogy Brick Wall Helper</h1>
-        <p id="greeting-output">System Status: Initializing...</p>
-        <button id="btn-action">Start Helper</button>
+        <p class="subtitle">Overcome research roadblocks with strategic logic.</p>
+
+        <form id="ancestor-form">
+            <div class="form-group">
+                <label for="ancestor-name">Ancestor Name:</label>
+                <input type="text" id="ancestor-name" placeholder="e.g. Segundo Alvarez" required>
+            </div>
+            <div class="form-group">
+                <label for="brick-wall-type">Brick Wall Type:</label>
+                <select id="brick-wall-type" required>
+                    <option value="">-- Choose an obstacle --</option>
+                    <option value="birth">Missing Birth / Baptism Record</option>
+                    <option value="parents">Unknown Parents / Lineage Stop</option>
+                    <option value="immigration">No Immigration / Arrival Record</option>
+                </select>
+            </div>
+            <button type="submit">Generate Strategy</button>
+        </form>
+
+        <section class="results-section">
+            <h2>Generated Action Plans</h2>
+            <select id="filter-type">
+                <option value="all">Show all</option>
+                <option value="birth">Birth</option>
+                <option value="parents">Parents</option>
+                <option value="immigration">Immigration</option>
+            </select>
+            <div id="cards-container"></div>
+        </section>
     </main>
 
     <script src="app.js"></script>

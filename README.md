@@ -24,7 +24,7 @@ Local web application developed in vanilla JavaScript designed to act as a strat
 
 ## Video Demonstration
 - [Watch the W01 Video Demonstration on YouTube](https://youtu.be/_eBUE-n2CJo)
-- [Watch the W02 Video Demonstration](video)
+- [Watch the W02 Video Demonstration](https://youtu.be/fxYLqvuX1gY)
 
 ## Author
 - **Segundo Alvarez**

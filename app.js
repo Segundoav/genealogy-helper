@@ -23,12 +23,13 @@ function handleFormSubmit(event) {
     }
 
     // Create one ancestor object and save it in the list
+    // dayjs is an external library (loaded in index.html) used to format the date
     const newAncestor = {
         id: Date.now(),
         name: name,
         type: type,
         steps: generateStrategy(type),
-        dateAdded: new Date().toLocaleDateString()
+        dateAdded: dayjs().format("DD/MM/YYYY")
     };
 
     ancestorsList.push(newAncestor);
@@ -67,6 +68,15 @@ function deleteAncestor(id) {
     ancestorsList = ancestorsList.filter(ancestor => ancestor.id !== id);
     saveToLocalStorage();
     renderAncestorCards();
+}
+
+// Adds the steps to the list one by one using recursion
+function addSteps(steps, list, index = 0) {
+    if (index >= steps.length) return; // stop when there are no more steps
+    const item = document.createElement("li");
+    item.textContent = steps[index];
+    list.appendChild(item);
+    addSteps(steps, list, index + 1); // the function calls itself
 }
 
 // Saves the list in the browser as JSON text
@@ -115,13 +125,9 @@ function renderAncestorCards() {
         const obstacle = document.createElement("p");
         obstacle.textContent = "Obstacle: " + ancestor.type.toUpperCase();
 
-        // Numbered list with the research steps
+        // Numbered list with the research steps (filled by the recursive function)
         const stepsList = document.createElement("ol");
-        ancestor.steps.forEach(step => {
-            const item = document.createElement("li");
-            item.textContent = step;
-            stepsList.appendChild(item);
-        });
+        addSteps(ancestor.steps, stepsList);
 
         const date = document.createElement("small");
         date.textContent = "Added on: " + ancestor.dateAdded;

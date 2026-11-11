@@ -13,10 +13,12 @@ Local web application developed in vanilla JavaScript designed to act as a strat
 - Ancestors stored as objects inside an array.
 - Data saved with localStorage and JSON, so it stays after reloading.
 - Filter cards by obstacle type and delete cards you no longer need.
+- Recursion (a function that calls itself) to add each research step, and the Day.js library to format dates.
 
 ## Technologies Used
 - HTML5 / CSS3
 - JavaScript (ES6+)
+- Day.js (external library, loaded from a CDN)
 
 ## How to Run
 1. Download or clone this repository.
@@ -24,7 +26,7 @@ Local web application developed in vanilla JavaScript designed to act as a strat
 
 ## Video Demonstration
 - [Watch the W01 Video Demonstration on YouTube](https://youtu.be/_eBUE-n2CJo)
-- [Watch the W02 Video Demonstration](https://youtu.be/fxYLqvuX1gY)
+- [Watch the W02 Video Demonstration](https://youtu.be/V7f5Y6iLg_8)
 
 ## Author
 - **Segundo Alvarez**

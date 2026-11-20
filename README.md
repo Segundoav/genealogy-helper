@@ -1,33 +1,44 @@
-# Genealogy Brick Wall Helper (Module #1 - JavaScript)
+# Overview
 
-## Description
 Local web application developed in vanilla JavaScript designed to act as a strategic diagnostic engine, helping researchers overcome genealogical "brick walls" by evaluating incomplete information.
 
-## Version Features (W01)
+As a software engineer, my purpose for writing this software was to practice the JavaScript language and its syntax while building a useful tool.
+
+Version Features (W01):
+
 - Semantic HTML structure and clean design.
 - Modern JavaScript logic using events (`addEventListener`).
 - Dynamic DOM manipulation.
 
-## Version Features (W02)
+Version Features (W02):
+
 - Conditional logic (if/else) that picks the research steps for each obstacle.
 - Ancestors stored as objects inside an array.
 - Data saved with localStorage and JSON, so it stays after reloading.
 - Filter cards by obstacle type and delete cards you no longer need.
 - Recursion (a function that calls itself) to add each research step, and the Day.js library to format dates.
 
-## Technologies Used
+[Software Demo Video (W02)](https://youtu.be/V7f5Y6iLg_8)
+
+[Software Demo Video (W01)](https://youtu.be/_eBUE-n2CJo)
+
+# Development Environment
+
 - HTML5 / CSS3
 - JavaScript (ES6+)
 - Day.js (external library, loaded from a CDN)
 
-## How to Run
+How to Run:
+
 1. Download or clone this repository.
 2. Open `index.html` in your browser.
 
-## Video Demonstration
-- [Watch the W01 Video Demonstration on YouTube](https://youtu.be/_eBUE-n2CJo)
-- [Watch the W02 Video Demonstration](https://youtu.be/V7f5Y6iLg_8)
+# Useful Websites
 
-## Author
-- **Segundo Alvarez**
-- Software Development Student at BYU-Pathway / BYU-Idaho.
+- [Day.js Documentation](https://day.js.org/)
+
+# Future Work
+
+- Add a button to edit an existing ancestor.
+- Add more types of brick walls.
+- Let the user mark each research step as done.
